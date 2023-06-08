@@ -10,10 +10,10 @@ app.use(cors());
 //send the input with url
 app.use(express.urlencoded({ extended: false }));
 
-//connecting database
+//connecting database  mongodb+srv://sagini:Sagini18@sagini.1bkss7a.mongodb.net/
 mongoose.set("strictQuery", false);
 mongoose
-  .connect("mongodb://localhost:27017/ToDoList")
+  .connect("mongodb+srv://sagini:Sagini18@sagini.1bkss7a.mongodb.net/ToDoList")
   .then(() => console.log("DB is connected successfully"))
   .catch((error) => console.log(error));
 
