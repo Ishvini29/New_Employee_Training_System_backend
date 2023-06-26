@@ -20,5 +20,5 @@ const Department = new mongoose.Schema(
     collection: "departments",
   }
 );
-const model = mongoose.model("DepartmentData", Department);
+const model = mongoose.model("DepartmentData", Department);  //create a model named "DepartmentData" based on the "Department" schema.
 module.exports = model;
